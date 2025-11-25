@@ -57,7 +57,7 @@ public class Main{
                 case 3:
                     System.out.print("Nhap ten can tim: ");
                     String name = sc.nextLine();
-                    Employee ep = employeeService.getEmployeeById(name);
+                    List<Employee> ep = employeeService.getEmployeeByName(name);
                     if(ep!=null){
                         System.out.println(ep.toString());
                     }else{
